@@ -1,3 +1,100 @@
 body {
-  background: #000;
+  font: 400 18px/27px "Raleway",sans-serif;
+  color: #232a33;
+  font-family: "Raleway",sans-serif;
 }
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+a {
+  font: inherit;
+  color: #191919;
+  text-decoration: none;
+  display: inline-block;
+  transition: .3s;
+}
+
+#wrapper {
+  overflow: hidden;
+  min-height: 500px;
+}
+
+/* header */
+#header {
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+#header .header-content {
+  padding: 35px 0;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+#header .header-content .logo {
+  margin-top: -14px;
+}
+
+#header .header-content .logo .home img {
+  max-width: 100%;
+  height: auto;
+}
+
+#header .header-content .contact {
+  margin-top: 0;
+  line-height: 1.94;
+  display: flex;
+  align-items: center;
+}
+
+#header .header-content .contact .address {
+  display: inline;
+  padding-right: 40px;
+  position: relative;
+  margin: 0;
+}
+
+#header .header-content .contact .address:after {
+  content: "";
+  position: absolute;
+  right: 25px;
+  top: -7px;
+  height: 51px;
+  width: 1px;
+  background-color: #cfd0d2;
+}
+
+
+#header .header-content .contact .phone {
+  margin-top: 0;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 1.2;
+  text-transform: uppercase;
+}
+
+#header .header-content .contact .phone .text {
+  color: #1caffc;
+}
+
+#header .header-content .contact .phone .text .icon {
+  font-size: 34px;
+  margin-right: -8px;
+  line-height: inherit;
+  display: inline-block;
+  text-align: center;
+}
+
+#header .header-content .contact .phone .text .note {
+  font-size: 14px;
+  font-weight: 800;
+  position: relative;
+  top: -19px;
+  left: -10px;
+}
+/* end header */
