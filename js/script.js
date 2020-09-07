@@ -1,7 +1,7 @@
 $(document).ready(function(){
-  jQuery('.camera_wrap').camera({
-    pagination: true,
-    loader: 'pie',
-    playPause: true
-  }); 
+  $('.camera_wrap').camera({
+	playPause: false,
+	loader: 'none',
+	autoAdvance: false,
+  });
 });
