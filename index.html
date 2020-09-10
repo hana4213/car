@@ -8,14 +8,16 @@
 <!-- CSS -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
 <link rel="stylesheet" type="text/css" href="https://fonts.googleapis.com/css?family=Raleway:400,700,800">
 <link href="https://fonts.googleapis.com/icon?family=Material+Icons">
-<link href="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/css/select2.min.css" rel="stylesheet" />
+<link href="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/css/select2.min.css" rel="stylesheet" />
 <link rel="stylesheet" href="libraries/camera/css/camera.css">
 <link rel="stylesheet" href="libraries/material/css/material-datetime-picker.css">
 <link rel="stylesheet" href="libraries/mercury/css/car-repire.css">
 <link rel="stylesheet" href="libraries/parallax/css/materialize-parallax.css">
 <link rel="stylesheet" href="libraries/owl-carousel/css/owl.carousel.min.css">
+<link rel="stylesheet" href="libraries/datetimepicker/css/bootstrap-material-datetimepicker.css">
 <link rel="stylesheet" href="css/style.css">
 <link rel="stylesheet" href="css/media.css">
 <body>
@@ -118,23 +120,23 @@
            <h3 class="title">Make a request</h3>
            <form class="mailform text-left" method="post">
              <div class="form-wrap">
-               <label class="form-label" for="forms-name">Name</label>
-                <input class="form-input form-custom" id="forms-name" type="text">
-	      <span class="form-validation"></span>
+               <label class="form-label label-input-1" for="forms-name">Name</label>
+                <input class="form-input form-custom" id="forms-name" type="text" data-id="1">
+	      <span class="form-validation error-1"></span>
               </div>
               <div class="form-wrap">
-                <label class="form-label" for="forms-phone">Phone</label>
-                <input class="form-input form-custom" id="forms-phone" type="text">
-	      <span class="form-validation"></span>
+                <label class="form-label label-input-2" for="forms-phone">Phone</label>
+                <input class="form-input form-custom" id="forms-phone" type="text" data-id="2">
+	      <span class="form-validation error-2"></span>
               </div>
               <div class="form-wrap">
-                <label class="form-label" for="forms-email">Email</label>
-                <input class="form-input form-custom" id="forms-email" type="text">
-	      <span class="form-validation"></span>
+                <label class="form-label label-input-3" for="forms-email">Email</label>
+                <input class="form-input form-custom" id="forms-email" type="text" data-id="3" data-mail="1">
+	      <span class="form-validation error-3"></span>
               </div>
               <div class="form-wrap">
-                <label class="form-label" for="pick-up-date">Date</label>
-                <input class="form-input form-custom" id="pick-up-date" type="text">
+                <label class="form-label label-input-4" for="pick-up-date">Date</label>
+                <input class="form-input form-custom" id="pick-up-date" type="text" data-id="4">
               </div>
               <div class="form-wrap">
                 <label class="form-label" for="select-time"></label>
@@ -145,14 +147,14 @@
                 </select>
               </div>
               <div class="form-wrap">
-                <label class="form-label" for="forms-make">Manufacturer</label>
-                <input class="form-input form-custom" id="forms-make">
-	      <span class="form-validation"></span>
+                <label class="form-label label-input-5" for="forms-make">Manufacturer</label>
+                <input class="form-input form-custom" id="forms-make" data-id="5">
+	      <span class="form-validation error-5"></span>
               </div>
               <div class="form-wrap">
-                <label class="form-label" for="forms-model">Model</label>
-                <input class="form-input form-custom" id="forms-model">
-	      <span class="form-validation"></span>
+                <label class="form-label label-input-6" for="forms-model">Model</label>
+                <input class="form-input form-custom" id="forms-model" data-id="6">
+	      <span class="form-validation error-6"></span>
               </div>
               <div class="form-wrap">
                 <label class="form-label" for="select-year"></label>
@@ -189,7 +191,7 @@
           </div>
 
           <div class="row row-50">
-            <div class="col-sm-6 col-md-4">
+            <div class="col-sm-6 col-md-4 in-left">
               <div class="box">
                 <div class="box-icon text-center">
                   <span class="car-repire-icon-22"></span>
@@ -201,7 +203,7 @@
               </div>
             </div>
  
-            <div class="col-sm-6 col-md-4">
+            <div class="col-sm-6 col-md-4 in-left">
               <div class="box">
                 <div class="box-icon text-center">
                   <span class="car-repire-icon-15"></span>
@@ -213,7 +215,7 @@
               </div>
             </div>
 
-            <div class="col-sm-6 col-md-4">
+            <div class="col-sm-6 col-md-4 in-left">
               <div class="box">
                 <div class="box-icon text-center">
                   <span class="car-repire-icon-28"></span>
@@ -225,7 +227,7 @@
               </div>
             </div>
 
-            <div class="col-sm-6 col-md-4">
+            <div class="col-sm-6 col-md-4 in-right">
               <div class="box">
                 <div class="box-icon text-center">
                   <span class="car-repire-icon-32"></span>
@@ -237,7 +239,7 @@
               </div>
             </div>
 
-            <div class="col-sm-6 col-md-4">
+            <div class="col-sm-6 col-md-4 in-right">
               <div class="box">
                 <div class="box-icon text-center">
                   <span class="car-repire-icon-47"></span>
@@ -249,7 +251,7 @@
               </div>
             </div>
 
-            <div class="col-sm-6 col-md-4">
+            <div class="col-sm-6 col-md-4 in-right">
               <div class="box">
                 <div class="box-icon text-center">
                   <span class="car-repire-icon-16"></span>
@@ -550,24 +552,113 @@
         </div>
       </div>
       <!-- close testimonials -->
+
+      <!-- map address -->
+      <div class="map">
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d119192.409607651!2d105.79639565820312!3d21.002143299999997!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3135ad0236b2aa39%3A0xd05f9cd9b870b733!2zQ8O0bmcgdHkgQ05ISCB0aGnhur90IGvhur8gd2ViIEdpYWkgxJBp4buHdQ!5e0!3m2!1svi!2s!4v1598865644013!5m2!1svi!2s" width="1357" height="600" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
+      </div>
+      <!-- close map -->
     </div>
     <!-- close content -->
+
+    <!-- footer -->
+    <div id="footer">
+      <div class="container">
+        <h2 class="text-center">Contacts</h2>
+        <div class="row">
+          <div class="col-md-6">
+            <!-- address -->
+            <div class="address">
+              <ul>
+                <li>
+                  <span class="icon car-repire-icon-warehouse"></span>
+                  <p><a href="#"> 28 Jackson Blvd Ste 1020 Chicago IL 60604-2340</a></p>
+                </li>
+                <li>
+                  <span class="icon fa fa-phone"></span>
+                  <p><a href="#">800-2345-6789</a>;<a href="#">800-2345-6790</a></p>
+                </li>
+                <li>
+                  <span class="icon fa fa-clock-o"></span>
+                  <p> 7 Days a week from 9:00 am to 7:00 pm</p>
+                </li>
+                <li>
+                  <span class="icon fa fa-envelope"></span>
+                  <p><a href="#"> info@demolink.org</a></p>
+                </li>
+              </ul>
+            </div>
+            <!-- close address -->
+
+            <!-- social -->
+            <ul class="social-list">
+              <li><a class="icon fa fa-facebook" href="#"></a></li>
+              <li class="custom"><a class="icon fa fa-twitter" href="#"></a></li>
+              <li class="custom"><a class="icon fa fa-google-plus" href="#"></a></li>
+            </ul>
+            <!-- close social -->
+            
+            <!-- coppyright -->
+            <p class="coppyright">
+              <span>Dương Đức</span>
+              <span> © </span>
+              <span class="copyright-year">2020</span>
+              <span> All Rights Reserved</span>
+            </p>
+            <!-- close coppyright -->
+          </div>
+          <div class="col-md-6">
+            <!-- contact form --> 
+            <form class="form-contact">
+              <div class="form-wrap">
+                <label class="form-label label-input-7" for="input-name">Name:</label>
+                <input type="text" class="form-input" id="input-name" data-id="7">
+                <span class="form-validation error-7"></span> 
+              </div>
+
+              <div class="form-wrap custom">
+                <label class="form-label label-input-8" for="input-phone">Phone:</label>
+                <input type="text" class="form-input" id="input-phone" data-id="8" data-phone="1">
+                <span class="form-validation error-8"></span> 
+              </div>
+
+              <div class="form-wrap custom">
+                <label class="form-label label-input-9" for="input-email">E-mail:</label>
+                <input type="text" class="form-input" id="input-email" data-id="9" data-mail="1">
+                <span class="form-validation error-9"></span> 
+              </div>
+
+              <div class="form-wrap custom">
+                <label class="form-label label-input-10" for="input-message">Message:</label>
+                <textarea type="text" class="form-input" id="input-message" data-id="10"></textarea>
+                <span class="form-validation error-10"></span> 
+              </div>
+
+              <div class="form-wrap custom">
+                <button class="btn" type="submit">Send</button>
+              </div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- close footer -->
   </div>
   <!-- close wrapper -->
 <!-- JS -->
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+<script type='text/javascript' src='libraries/camera/js/jquery.min.js'></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 <script src="https://unpkg.com/babel-polyfill@6.2.0/dist/polyfill.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/moment.js/2.17.1/moment.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/rome/2.1.22/rome.standalone.js"></script>
-<script src="https://cdn.jsdelivr.net/npm/select2@4.1.0-beta.1/dist/js/select2.min.js"></script>
-<script type='text/javascript' src='libraries/camera/js/jquery.min.js'></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/select2/4.0.13/js/select2.min.js"></script>
 <script type='text/javascript' src='libraries/camera/js/jquery.mobile.customized.min.js'></script>
 <script type='text/javascript' src='libraries/camera/js/jquery.easing.1.3.js'></script> 
 <script type="text/javascript" src="libraries/camera/js/camera.js"></script>
 <script src="libraries/material/js/material-datetime-picker.js" charset="utf-8"></script>
 <script type="text/javascript" src="libraries/parallax/js/materialize-parallax.js"></script>
 <script type="text/javascript" src="libraries/owl-carousel/js/owl.carousel.min.js"></script>
+<script type="text/javascript" src="libraries/datetimepicker/js/bootstrap-material-datetimepicker.js"></script>
 <script type="text/javascript" src="js/script.js"></script>
 </body>
 </html>	
